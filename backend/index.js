@@ -55,3 +55,7 @@ app.get('/books/search', async (req, res) => {
         res.status(500).json({ message: 'Error searching books' });
     }
 });
+// Add a route for the root path
+app.get('/', (req, res) => {
+  res.json({ message: 'Book Store API is running' });
+});

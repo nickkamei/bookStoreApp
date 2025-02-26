@@ -10,14 +10,14 @@ const Contact = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-
+  
   const navigate = useNavigate(); // Use the useNavigate hook
-
+  
   const onSubmit = (data) => {
     console.log(data); // Logs the form data when submitted
     navigate(-1); // Navigate back to the previous page
   };
-
+  
   return (
     <div>
       <Navbar />
@@ -29,7 +29,6 @@ const Contact = () => {
               <Link to="/" className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                 ✕
               </Link>
-
               <h3 className="font-bold text-lg">Contact Us</h3>
               <div className="mt-4 space-y-2">
                 <span>Username</span>
